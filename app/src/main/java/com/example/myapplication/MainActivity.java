@@ -34,9 +34,9 @@ private secondFrag secondFrag;
         firstFrag = new firstFrag();
         secondFrag = new secondFrag();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fr1,homeFrag);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fr2,firstFrag);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fr3,secondFrag);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fr1,homeFrag).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fr2,firstFrag).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fr3,secondFrag).commit();
 
         nav1 = findViewById(R.id.nav);
         nav1.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
